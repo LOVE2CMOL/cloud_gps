@@ -228,6 +228,10 @@ class DataFetcher:
                 address = self.address[imei]
                 totalKm = self.totalkm[imei]
                 
+                                
+                gPSSignal = data["gPSSignal"]
+                statusAbstract = data["statusAbstract"]
+                
                 attrs ={
                     "course":direction,
                     "speed":speed,
@@ -241,7 +245,9 @@ class DataFetcher:
                     "address":address,
                     "powbatteryvoltage":voltage,
                     "totalKm":totalKm,
-                    "positionType":positionType
+                    "positionType":positionType,
+                    "gPSSignal":gPSSignal,
+                    "statusAbstract":statusAbstract
                 }
                 
                 self.trackerdata[imei] = {"location_key":self.location_key+imei,"deviceinfo":self.deviceinfo[imei],"thislat":thislat,"thislon":thislon,"imei":imei,"status":status,"attrs":attrs}

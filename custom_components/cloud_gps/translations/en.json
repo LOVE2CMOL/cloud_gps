@@ -194,6 +194,12 @@
 					"map_bd_lng": {
 					  "name": "百度地图经度"
 					},
+					"gPSSignal": {
+					  "name": "卫星数"
+					},
+					"statusAbstract": {
+					  "name": "状态描述"
+					},
 					"source_type": {
 					  "name": "数据源",
 					  "state": {
